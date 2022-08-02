@@ -1,0 +1,7 @@
+﻿Der Interpreter wird auf Aale aufgebaut.
+
+Aal schwimmt 
+Aal biegt nach rechts/links
+Aal frisst Fisch/Plankton/Nichts
+Aal macht Rolle/Looping/180°/360°/720°
+Aal schwimmt geradeaus/oben/unten

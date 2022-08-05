@@ -16,7 +16,7 @@ namespace Aaleren
         {
             this.path = path;
             sr = new StreamReader(path);
-
+            
             int i = 0;
             lines = new string[] { };
             while (sr.ReadLine() != null)

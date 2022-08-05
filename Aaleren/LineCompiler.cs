@@ -32,18 +32,18 @@ namespace Aaleren
         }
         private void CheckInput(string[] wordsInLine)
         {
-            for (int i = 0; i < wordsInLine.Length; i++)
+            if(wordsInLine[0] == "Aal")
+            {
+                Console.WriteLine("aal is in");
+            }
+            /*for (int i = 0; i < wordsInLine.Length; i++)
             {
                 switch (wordsInLine[i])
                 {
-                    case "chicken":
-                        if (Tools.AllStringsAreTheSame(wordsInLine))
-                        {
-                            
-                        }
-                        break;
+                    case "Aal":
+
                 }
-            }
+            }*/
         }
     }
 }

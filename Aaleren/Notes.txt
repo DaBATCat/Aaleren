@@ -5,3 +5,30 @@ Aal biegt nach rechts/links
 Aal frisst Fisch/Plankton/Nichts
 Aal macht Rolle/Looping/180°/360°/720°
 Aal schwimmt geradeaus/oben/unten
+-Aal macht blubb
+-Aal wird gegessen
+
+============================
+[Aal macht blubb]:
+
+=>Gibt chars[] als einen String aus
+============================
+
+============================
+[Aal wird gegessen]:
+
+=>Beendet das Programm
+============================
+
+============================
+Whitespaces % 5 == 0:
+
+=> Integer[0] wird um 1 erhöht
+============================
+
+============================
+WordsInLine[0] ist kein Whitespace und nicht "Aal":
+
+=>Integer[0] wird in einen char gecastet, dieser char wird
+in chars[] mit einer freien Stelle gespeichert.
+============================

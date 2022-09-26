@@ -10,6 +10,7 @@ namespace Aaleren
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }

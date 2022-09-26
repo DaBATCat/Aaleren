@@ -10,9 +10,6 @@ namespace Aaleren
     {
         static void Main(string[] args)
         {
-            LineCompiler compiler = new LineCompiler();
-            compiler.GetInput();
-            Console.ReadKey();
         }
     }
 }

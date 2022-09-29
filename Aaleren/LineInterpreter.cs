@@ -16,20 +16,28 @@ namespace Aaleren
         {
             for(int i = 0; i < lines.Length; i++)
             {
-
+                ManageConditions(i);
+                //Console.WriteLine($"Length in Line {i+1}: " + Editor.GetWordsInLine(i).Length + $"\nemptyLines: {emptyLines}]");    
             }
         }
         //TODO
         private void ManageConditions(int index)
         {
-
+            FirstWordIsAal(index);
+            if(emptyLines % 5 == 0 && emptyLines > 0)
+            {
+                Console.WriteLine("Miau");
+                variables[0]++;
+                Console.WriteLine(variables[0]);
+            }
         }
         private bool FirstWordIsAal(int index)
         {
             string[] wordsInLine = Editor.GetWordsInLine(index);
-            if (wordsInLine.Length == 0)
+            if (wordsInLine[0] == "")
             {
                 emptyLines++;
+                //Console.WriteLine("EMPTY LINE");
             }
 
             return wordsInLine[0].ToUpper() == "AAL";

@@ -14,6 +14,14 @@ namespace Aaleren
         private static string[] lines = File.ReadAllLines(editorName);
         private static int lengthOfLines;
         public static string[] GetLines() => lines;
-        public static string[] GetWordsInLine(int index) => Tools.SplittedWords(lines[index]);
+        public static string[] GetWordsInLine(int index)
+        {
+            if(lines[index] == "")
+            {
+                //Console.WriteLine($"detected NULL at {index}");
+                return new string[] {""};
+            }
+            else return Tools.SplittedWords(lines[index]);
+        }
     }
 }

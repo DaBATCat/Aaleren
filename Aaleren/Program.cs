@@ -10,6 +10,8 @@ namespace Aaleren
     {
         static void Main(string[] args)
         {
+            LineInterpreter lineInterpreter = new LineInterpreter();
+            lineInterpreter.Init();
             Console.ReadKey();
         }
     }

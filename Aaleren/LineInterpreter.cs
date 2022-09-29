@@ -17,8 +17,8 @@ namespace Aaleren
             for(int i = 0; i < lines.Length; i++)
             {
                 ManageConditions(i);
-                //Console.WriteLine($"Length in Line {i+1}: " + Editor.GetWordsInLine(i).Length + $"\nemptyLines: {emptyLines}]");    
             }
+            Console.WriteLine($"Empty lines: {emptyLines}, var[0]: {variables[0]}");
         }
         //TODO
         private void ManageConditions(int index)
@@ -26,7 +26,6 @@ namespace Aaleren
             FirstWordIsAal(index);
             if(emptyLines % 5 == 0 && emptyLines > 0)
             {
-                Console.WriteLine("Miau");
                 variables[0]++;
                 Console.WriteLine(variables[0]);
             }

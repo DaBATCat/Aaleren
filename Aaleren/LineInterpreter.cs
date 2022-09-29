@@ -12,6 +12,7 @@ namespace Aaleren
         private int emptyLines = 0;
         private static int[] variables = new int[10];
         private char[] chars = new char[variables.Length];
+        private static int variableIndex = 0;
         public void Init()
         {
             for(int i = 0; i < lines.Length; i++)
@@ -23,8 +24,8 @@ namespace Aaleren
         //TODO
         private void ManageConditions(int index)
         {
-            FirstWordIsAal(index);
-            if(emptyLines % 5 == 0 && emptyLines > 0)
+            //Line is empty
+            if(!FirstWordIsAal(index) && emptyLines % 5 == 0 && emptyLines > 0)
             {
                 variables[0]++;
                 Console.WriteLine(variables[0]);
@@ -36,13 +37,26 @@ namespace Aaleren
             if (wordsInLine[0] == "")
             {
                 emptyLines++;
-                //Console.WriteLine("EMPTY LINE");
+                return false;
             }
 
             return wordsInLine[0].ToUpper() == "AAL";
         }
 
-        private bool CheckLinesEmpty() => emptyLines % 5 == 0;
+        //Increments variableIndex, if its over the range (10),
+        //it'll be set to 0 again
+        private void IncrementVariableIndex()
+        {
+            if(variableIndex >= 10)
+            {
+                variableIndex = 0;
+            }
+            else
+            {
+                variableIndex++;
+            }
+        }
+
         
         /*
          * Wenn eine Zeile im Text leer ist / Empty space in the editor

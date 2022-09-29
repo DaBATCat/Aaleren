@@ -1,6 +1,6 @@
 ﻿Der Interpreter wird auf Aale aufgebaut.
 
-Aal schwimmt 
+-Aal schwimmt 
 Aal biegt nach rechts/links
 Aal frisst Fisch/Plankton/Nichts
 Aal macht Rolle/Looping/180°/360°/720°
@@ -8,6 +8,12 @@ Aal schwimmt geradeaus/oben/unten
 -Aal macht blubb
 -Aal wird gegessen
 
+============================
+[Aal schwimmt]:
+
+=> variableIndex wird um 1 erhöht. 
+variableIndex darf nicht größer gleich 10 sein, sonst
+wird sie wieder auf 0 gesetzt
 ============================
 [Aal macht blubb]:
 
@@ -20,15 +26,15 @@ Aal schwimmt geradeaus/oben/unten
 =>Beendet das Programm
 ============================
 
-============================
+============================ ✅
 Whitespaces % 5 == 0:
 
 => Integer[0] wird um 1 erhöht
 ============================
 
 ============================
-WordsInLine[0] ist kein Whitespace und nicht "Aal":
+WordsInLine[0] ist kein Whitespace und nicht "Aal" (wenn Integer[0] um 1 erhöht wurde):
 
 =>Integer[0] wird in einen char gecastet, dieser char wird
-in chars[] mit einer freien Stelle gespeichert.
+in chars[0] mit einer freien Stelle gespeichert.
 ============================

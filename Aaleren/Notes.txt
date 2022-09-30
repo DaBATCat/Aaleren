@@ -7,7 +7,7 @@ Aal macht Rolle/Looping/180°/360°/720°
 Aal schwimmt geradeaus/oben/unten
 -Aal macht blubb
 -Aal wird gegessen
-
+-Aal frisst Plankton
 ============================
 [Aal schwimmt]:
 
@@ -29,12 +29,18 @@ wird sie wieder auf 0 gesetzt
 ============================ ✅
 Whitespaces % 5 == 0:
 
-=> Integer[0] wird um 1 erhöht
+=> Integer[variableIndex] wird um 1 erhöht
+============================
+
+============================
+[Aal frisst Plankton]:
+
+=> Inkrementiert variableIndex. variableIndex ist nicht größer gleich 10.
 ============================
 
 ============================
 WordsInLine[0] ist kein Whitespace und nicht "Aal" (wenn Integer[0] um 1 erhöht wurde):
 
-=>Integer[0] wird in einen char gecastet, dieser char wird
-in chars[0] mit einer freien Stelle gespeichert.
+=>Integer[variableIndex] wird in einen char gecastet, dieser char wird
+in chars[variableIndex] mit einer freien Stelle gespeichert.
 ============================

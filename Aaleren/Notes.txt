@@ -8,22 +8,26 @@ Aal schwimmt geradeaus/oben/unten
 -Aal macht blubb
 -Aal wird gegessen
 -Aal frisst Plankton
-============================
-[Aal schwimmt]:
+-Aal schaut umher
+-Aal schwurbelt
 
-=> variableIndex wird um 1 erhöht. 
-variableIndex darf nicht größer gleich 10 sein, sonst
-wird sie wieder auf 0 gesetzt
-============================
+============================ ✅
 [Aal macht blubb]:
 
 =>Gibt chars[] als einen String aus
 ============================
 
-============================
+============================ ✅
 [Aal wird gegessen]:
 
 =>Beendet das Programm
+============================
+
+============================ ✅
+[Aal wird gegessen] ist nicht in der letzten Zeile:
+
+=>[Aal schwurbelt] wird deaktiviert (variableIndex kann nicht
+resettet werden)
 ============================
 
 ============================ ✅
@@ -32,7 +36,7 @@ Whitespaces % 5 == 0:
 => Integer[variableIndex] wird um 1 erhöht
 ============================
 
-============================
+============================ ✅
 [Aal frisst Plankton]:
 
 => Inkrementiert variableIndex. variableIndex ist nicht größer gleich 10.
@@ -43,4 +47,14 @@ WordsInLine[0] ist kein Whitespace und nicht "Aal" (wenn Integer[0] um 1 erhöht
 
 =>Integer[variableIndex] wird in einen char gecastet, dieser char wird
 in chars[variableIndex] mit einer freien Stelle gespeichert.
+============================
+
+============================ ✅
+[Aal schaut umher]:
+castet Integer[variableIndex] in chars[variableIndex]
+============================
+
+============================ ✅
+[Aal schwurbelt]:
+setzt Integer[variableIndex] auf 0 zurück
 ============================

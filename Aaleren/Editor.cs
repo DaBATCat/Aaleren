@@ -14,6 +14,7 @@ namespace Aaleren
         private static string[] lines = File.ReadAllLines(editorName);
         private static int lengthOfLines;
         public static string[] GetLines() => lines;
+        //public static string GetLine(int index) => lines[index];
         public static string[] GetWordsInLine(int index)
         {
             if(lines[index] == "")

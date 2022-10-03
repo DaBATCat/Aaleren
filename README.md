@@ -14,4 +14,5 @@ The Syntax:
 | Aal schaut umher | The Integer at the position of the indexer will be casted to a String |
 | Aal schwurbelt | Resets the Integer to 0 at the position of the indexer |
 
-This language isn't just useless, it's a catastrophe. The commands are in german and the .txt files are full of empty spaces. But you don't have to capitalizing letters!
+
+This language isn't just useless, it's a catastrophe. The commands are in german and the *.txt* files are full of empty spaces. But you don't have to worry about capitalizing letters! :D

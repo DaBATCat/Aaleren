@@ -16,3 +16,6 @@ The Syntax:
 
 
 This language isn't just useless, it's a catastrophe. The commands are in german and the *.txt* files are full of empty spaces. But you don't have to worry about capitalizing letters! :D
+
+# Is it useful?
+No.

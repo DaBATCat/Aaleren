@@ -1,3 +1,3 @@
 # Aaleren
-This project is based on esoteric programming languages, WIP!
-You can check the (coming up) commands in *Notes.txt* 
+This is a little interpreter, with simple functions. The syntax is about eels, but in german. It's inspired by some esoteric languages like chicken, Brainf*ck, Malbolge, Chef, ...
+<hr>
